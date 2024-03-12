@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QH4MVFtsLuswHylh5+E/4gNPxpws0a5ByzBRpM6yaLz0L/8eYzzE6pNBvHXO7+Pb" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        .flex-end {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .custom-margin {
+            margin-left: 17px;
+        }
+
+        .bg-blue {
+            background-color: blue;
+        }
+
+        .icon-white {
+            color: white;
+        }
+
+        .avatar {
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+            padding: 5px;
+            border-radius: 50%;
+        }
+
+        .avatar-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .rounded-circle {
+            border-radius: 50%;
+        }
+
+        .avatar_b {
+            border: 2px dotted #807171;
+        }
+
+        .avatar_c {
+            border: 2px solid #1409b3;
+        }
+
+        .bold-span {
+            font-weight: bold;
+        }
+
+        .big-dot i.bi-dot {
+            font-size: 1.5em;
+        }
+
+        .txt {
+            padding: 12px;
+        }
+
+        .place {
+            padding-top: 5px;
+            padding-right: 70px;
+        }
+
+        .box-right {
+            padding-top: 6px;
+        }
+
+        /* Responsive styling for mobile screens */
+        @media (max-width: 576px) {
+            .txt {
+                font-size: 1rem;
+                padding: 8px;
+            }
+
+            .place {
+                padding-right: 20px;
+            }
+
+            .box-right {
+                padding-top: 6px;
+            }
+
+            .avatar {
+                width: 50px;
+                height: 50px;
+            }
+
+            .flex-end {
+                justify-content: center;
+            }
+
+            h7 {
+                font-size: 0.9rem; /* Adjust font size for h7 tag */
+            }
+
+            p {
+                font-size: 0.8rem; /* Adjust font size for p tag */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="bg-white rounded-3 p-3 mt-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <h3 class="txt">All sales orders <span><i class="bi bi-caret-down-fill"></i></span></h3>
+                <div class="flex-end">
+                    &nbsp;&nbsp;
+                    <i class="bi bi-list"></i>
+                    <i class="bi bi-search custom-margin"></i>
+                    <div class="rounded-pill bg-blue p-2 custom-margin">
+                        <i class="bi bi-plus icon-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bg-white rounded-3 p-3 mt-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="avatar avatar_b">
+                    <img src="https://imgs.search.brave.com/fdRvRxRKb9mw_7XyMl7m04N_Cwesbw9vDT6GxT0MlXU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZGJj/ZG4uYi1jZG4ubmV0/L2ltZy9QaG90b3Mv/QXZhdGFycy9pbWcl/MjAoMSkud2VicA"
+                        alt="" class="avatar-img  rounded-circle ">
+                </div>
+                <div class="place">
+                    <h7 class="text-dark"><span class="bold-span">Yoland Barrueco</span></h7>
+                    <p class="text-success"><span style="font-weight: bold;"><i class="bi bi-dot"></i> FULFILLED</span>
+                    </p>
+                </div>
+                <div class="box-right">
+                    <h7 class="text-dark"><span class="bold-span">1 255,00 $</span></h7>
+                    <p class="text-muted" style="font-weight: bold;">SO-00001</p>
+                </div>
+                <div class="flex-end text-muted">
+                    &nbsp;&nbsp;
+                    <i class="bi bi-three-dots-vertical"></i>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="bg-white rounded-3 p-3 mt-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="avatar avatar_c">
+                    <img src="https://imgs.search.brave.com/fdRvRxRKb9mw_7XyMl7m04N_Cwesbw9vDT6GxT0MlXU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZGJj/ZG4uYi1jZG4ubmV0/L2ltZy9QaG90b3Mv/QXZhdGFycy9pbWcl/MjAoMSkud2VicA"
+                        alt="" class="avatar-img  rounded-circle ">
+                </div>
+                <div class="place">
+                    <h7 class="text-dark"><span class="bold-span">Wan Gengxin</span></h7>
+                    <p class="text-primary"><span style="font-weight: bold;"><i class="bi bi-dot"></i> CONFIRMED</span>
+                    </p>
+                </div>
+                <div class="box-right">
+                    <h7 class="text-dark"><span class="bold-span">904,00 $</span></h7>
+                    <p class="text-muted" style="font-weight: bold;">SO-00001</p>
+                </div>
+                <div class="flex-end text-muted">
+                    &nbsp;&nbsp;
+                    <i class="bi bi-three-dots-vertical"></i>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="bg-white rounded-3 p-3 mt-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="avatar avatar_b">
+                    <img src="https://imgs.search.brave.com/fdRvRxRKb9mw_7XyMl7m04N_Cwesbw9vDT6GxT0MlXU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZGJj/ZG4uYi1jZG4ubmV0/L2ltZy9QaG90b3Mv/QXZhdGFycy9pbWcl/MjAoMSkud2VicA"
+                        alt="" class="avatar-img  rounded-circle ">
+                </div>
+                <div class="place">
+                    <h7 class="text-dark"><span class="bold-span">Sampson Totton</span></h7>
+                    <p class="text-success"><span style="font-weight: bold;"><i class="bi bi-dot"></i> FULFILLED</span>
+                    </p>
+                </div>
+                <div class="box-right">
+                    <h7 class="text-dark"><span class="bold-span">145,99 $</span></h7>
+                    <p class="text-muted" style="font-weight: bold;">SO-00001</p>
+                </div>
+                <div class="flex-end text-muted">
+                    &nbsp;&nbsp;
+                    <i class="bi bi-three-dots-vertical"></i>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="bg-primary rounded-3 p-3 mt-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="avatar avatar_b">
+                    <img src="https://imgs.search.brave.com/fdRvRxRKb9mw_7XyMl7m04N_Cwesbw9vDT6GxT0MlXU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZGJj/ZG4uYi1jZG4ubmV0/L2ltZy9QaG90b3Mv/QXZhdGFycy9pbWcl/MjAoMSkud2VicA"
+                        alt="" class="avatar-img  rounded-circle ">
+                </div>
+                <div class="place">
+                    <h7 class="text-dark"><span class="bold-span">Miriam de Jesus</span></h7>
+                    <p class="text-white"><span style="font-weight: bold;"><i class="bi bi-dot"></i> PARTIALLY SHIPPED</span>
+                    </p>
+                </div>
+                <div class="box-right">
+                    <h7 class="text-dark"><span class="bold-span">3 669,4 $</span></h7>
+                    <p class="text-muted" style="font-weight: bold;">SO-00001</p>
+                </div>
+                <div class="flex-end text-muted">
+                    &nbsp;&nbsp;
+                    <i class="bi bi-three-dots-vertical"></i>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="bg-white rounded-3 p-3 mt-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="avatar avatar_c">
+                    <img src="https://imgs.search.brave.com/fdRvRxRKb9mw_7XyMl7m04N_Cwesbw9vDT6GxT0MlXU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZGJj/ZG4uYi1jZG4ubmV0/L2ltZy9QaG90b3Mv/QXZhdGFycy9pbWcl/MjAoMSkud2VicA"
+                        alt="" class="avatar-img  rounded-circle ">
+                </div>
+                <div class="place">
+                    <h7 class="text-dark"><span class="bold-span">Dusana Semenov</span></h7>
+                    <p class="text-primary"><span style="font-weight: bold;"><i class="bi bi-dot"></i> CONFIRMED</span>
+                    </p>
+                </div>
+                <div class="box-right">
+                    <h7 class="text-dark"><span class="bold-span">244,00 $</span></h7>
+                    <p class="text-muted" style="font-weight: bold;">SO-00001</p>
+                </div>
+                <div class="flex-end text-muted">
+                    &nbsp;&nbsp;
+                    <i class="bi bi-three-dots-vertical"></i>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="bg-white rounded-3 p-3 mt-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="avatar avatar_b">
+                    <img src="https://imgs.search.brave.com/fdRvRxRKb9mw_7XyMl7m04N_Cwesbw9vDT6GxT0MlXU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZGJj/ZG4uYi1jZG4ubmV0/L2ltZy9QaG90b3Mv/QXZhdGFycy9pbWcl/MjAoMSkud2VicA"
+                        alt="" class="avatar-img  rounded-circle ">
+                </div>
+                <div class="place">
+                    <h7 class="text-dark"><span class="bold-span">Beth Murphy</span></h7>
+                    <p class="text-warning"><span style="font-weight: bold;"><i class="bi bi-dot"></i> PARTIALLY SHIPPED</span>
+                    </p>
+                </div>
+                <div class="box-right">
+                    <h7 class="text-dark"><span class="bold-span">978,26 $</span></h7>
+                    <p class="text-muted" style="font-weight: bold;">SO-00001</p>
+                </div>
+                <div class="flex-end text-muted">
+                    &nbsp;&nbsp;
+                    <i class="bi bi-three-dots-vertical"></i>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fw1IFqJNlRT3tx9FqLj9cGhxIjZ4aZvnPvoKw2jq2tc+dfzJ+VRPdDlq+PdjoXks"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

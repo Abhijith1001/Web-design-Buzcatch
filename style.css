@@ -116,7 +116,10 @@ a.sidebar-link {
 .hamburger-menu {
     display: none;
     cursor: pointer;
-    z-index: 1001;
+    z-index: 999;
+    position: fixed; /* Fixed positioning */
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
 }
 
 .hamburger-menu i {
@@ -144,7 +147,7 @@ a.sidebar-link {
         left: 0;
         width: 200px;
         padding: 20px;
-        background-color: rgb(211, 223, 223);
+        background-color: #fff;
         z-index: 1000;
         overflow-y: auto;
         transition: width 0.3s ease-in-out;
@@ -164,103 +167,43 @@ a.sidebar-link {
 
 
 
-
-
-
-.flex-end {
+.container {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.custom-margin {
-    margin-left: 17px;
-}
-
-.bg-blue {
-    background-color: blue;
-}
-
-.icon-white {
-    color: white;
-}
-
-.avatar {
-    width: 60px;
-    height: 60px;
-    overflow: hidden;
-    padding: 5px;
-    border-radius: 50%;
-}
-
-.avatar-img {
+    flex-direction: column;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    overflow-x: auto; /* Enable horizontal scrolling */
 }
 
-.rounded-circle {
-    border-radius: 50%;
+.row {
+    display: flex;
+    flex-direction: row;
 }
 
-.avatar_b {
-    border: 2px dotted #807171;
-}
-
-.avatar_c {
-    border: 2px solid #1409b3;
-}
-
-.bold-span {
+.header {
     font-weight: bold;
 }
 
-.big-dot i.bi-dot {
-    font-size: 1.5em;
+.cell {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
 }
 
-.txt {
-    padding: 12px;
+.item-table {
+    background-color: #f7f4f4;
+    border-radius: 10px;
+    overflow: auto; /* Enable vertical scrolling if necessary */
+    white-space: nowrap; /* Prevent wrapping of content */
 }
 
-.place {
-    padding-top: 5px;
-    padding-right: 70px;
-}
-
-.box-right {
-    padding-top: 6px;
-
-}
-
-@media (max-width: 576px) {
-    .txt {
-        font-size: 1rem;
-        padding: 8px;
+@media screen and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
     }
-
-    .place {
-        padding-right: 20px;
-    }
-
-    .box-right {
-        padding-top: 6px;
-    }
-
-    .avatar {
-        width: 50px;
-        height: 50px;
-    }
-
-    .flex-end {
-        justify-content: center;
-    }
-
-    h7 {
-        font-size: 0.9rem; 
-    }
-
-    p {
-        font-size: 0.7rem; 
+    
+    .bg-white {
+        flex-basis: calc(100% - 20px);
     }
 }
+

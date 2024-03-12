@@ -160,3 +160,107 @@ a.sidebar-link {
         margin-top: 100px;
     }
 }
+
+
+
+
+
+
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.custom-margin {
+    margin-left: 17px;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.icon-white {
+    color: white;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+}
+
+.avatar_b {
+    border: 2px dotted #807171;
+}
+
+.avatar_c {
+    border: 2px solid #1409b3;
+}
+
+.bold-span {
+    font-weight: bold;
+}
+
+.big-dot i.bi-dot {
+    font-size: 1.5em;
+}
+
+.txt {
+    padding: 12px;
+}
+
+.place {
+    padding-top: 5px;
+    padding-right: 70px;
+}
+
+.box-right {
+    padding-top: 6px;
+
+}
+
+@media (max-width: 576px) {
+    .txt {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .place {
+        padding-right: 20px;
+    }
+
+    .box-right {
+        padding-top: 6px;
+    }
+
+    .avatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .flex-end {
+        justify-content: center;
+    }
+
+    h7 {
+        font-size: 0.9rem; 
+    }
+
+    p {
+        font-size: 0.7rem; 
+    }
+}

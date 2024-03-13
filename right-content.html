@@ -41,8 +41,6 @@
             font-size: 12px;
         }
 
-
-
         th {
             color: gray;
         }
@@ -50,9 +48,66 @@
         .table-content {
             border-radius: 10px;
         }
+
+        @media (max-width: 768px) {
+            .tab {
+                padding: 10px;
+            }
+
+            .personal_detail {
+                padding: 20px;
+            }
+
+            .desktop-view {
+                display: none;
+            }
+
+            .mobile-view {
+                display: block;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .desktop-view {
+                display: block;
+            }
+
+            .mobile-view {
+                display: none;
+            }
+
+            .item-table.desktop-view {
+                display: block !important;
+            }
+        }
+
+        .order-container {
+        display: flex;
+    }
+
+    .order p {
+        margin: 0;
+    }
+
+  
+    @media only screen and (max-width: 600px) {
+        .order-container {
+            display: block;
+        }
+
+        .order {
+            margin-bottom: 20px;
+        }
+    }
+
+   
+    @media only screen and (min-width: 601px) {
+        .order p {
+            white-space: nowrap; 
+        }
+    }
     </style>
 </head>
-
 
 <body>
 
@@ -69,7 +124,7 @@
             <li class="nav-item" role="presentation">
                 <a data-mdb-tab-init class="nav-link" id="ex3-tab-3" href="#ex3-tabs-3" role="tab"
                     aria-controls="ex3-tabs-3" aria-selected="false">HISTORY</a>
-            </li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </li>
             <li class="nav-item" role="presentation">
                 <a data-mdb-tab-init class="nav-link" id="ex3-tab-3" href="#ex3-tabs-3" role="tab"
                     aria-controls="ex3-tabs-3" aria-selected="false"><i class="bi bi-pen"></i></a>
@@ -93,24 +148,22 @@
                         <p class="text-muted" style="font-weight: bold;">#SO-00003</p>
                         <p class="partially-shipped">PARTIALLY SHIPPED</p>
                         <br>
-                        <div style="display: flex;">
-                            <div style="flex: 1;">
-                                <p class="order">
+                        <div class="order-container">
+                            <div class="order">
+                                <p>
                                     <span class="round"><i class="bi bi-envelope"></i></span>
-                                    ORDER DATE
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;14
-                                    August 2015
+                                    14 August 2015
                                 </p>
-                            </div>
-                            <div style="flex: 1;">
-                                <p class="order">
+                            </div> &nbsp;&nbsp;&nbsp;
+                            <div class="order">
+                                <p>
                                     <span class="round"><i class="bi bi-truck"></i></span>
-                                    EXPECTED DATE
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;24
-                                    August 2015
+                                    24 August 2015
                                 </p>
                             </div>
                         </div>
+                        
+                    
                     </div>
 
                     <div style="flex: 1; padding: 40px;" class="personal_detail">
@@ -123,10 +176,8 @@
                         <p class="font-weight-bold">2762 Mapleview Drive<br>South Fulton<br>Tennessee--38257</p>
                     </div>
                 </div>
-
-
             </div>
-            <div class="item-table">
+            <div class="item-table desktop-view">
                 <div class="container">
                     <div class="row header">
                         <div class="cell">ITEMS & DESCRIPTION</div>
@@ -213,19 +264,95 @@
                         <div class="text-dark cell font-weight-bold">401,04 $</div>
                     </div>
                 </div>
-
-
-
-            </div>
-            <div class="tab-pane fade" id="ex3-tabs-2" role="tabpanel" aria-labelledby="ex3-tab-2">
-                Tab 2 content
-            </div>
-            <div class="tab-pane fade" id="ex3-tabs-3" role="tabpanel" aria-labelledby="ex3-tab-3">
-                Tab 3 content
             </div>
         </div>
-
     </div>
+
+    <div class="bg-white rounded-3 p-3 mt-3 row mobile-view">
+        <div class="cell">ITEMS & DESCRIPTION</div>
+        <div class="d-flex justify-content-between align-items-center cell">
+            <div class="product"
+                style="background-color: #ccc; border-radius: 5px; display: inline-block; position: relative;">
+                <img src="https://imgs.search.brave.com/fdRvRxRKb9mw_7XyMl7m04N_Cwesbw9vDT6GxT0MlXU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZGJj/ZG4uYi1jZG4ubmV0/L2ltZy9QaG90b3Mv/QXZhdGFycy9pbWcl/MjAoMSkud2VicA"
+                    alt="" class="avatar-img rounded-circle" style="position: relative; height: 60px; width: 60px;">
+                <p
+                    style="position: absolute; top: -13px; left: -10px; margin: 0; color: rgb(182, 83, 83); background-color: rgba(223, 228, 225, 0.5); padding: 5px; border-radius: 50%; border: 2px solid rgb(41, 206, 115);">
+                    9</p>
+            </div>
+            <div>
+                <h7 class="text-dark"><span class="bold-span">OLLIE ARNES...</span></h7>
+            </div>
+        </div>
+        <div class="cell">INVOICED</div>
+        <div class="text-success cell"><i class="bi bi-check"></i></div>
+        <div class="cell">PACKED</div>
+        <div class="text-success cell"><i class="bi bi-check"></i></div>
+        <div class="cell">SHIPPED</div>
+        <div class="text-success cell"><i class="bi bi-check"></i></div>
+        <div class="cell">RATE</div>
+        <div class="text-muted cell font-weight-bold">30,00 $</div>
+        <div class="cell">AMOUNT</div>
+        <div class="text-dark cell font-weight-bold">270,00 $</div>
+    </div>
+
+
+    <div class="bg-white rounded-3 p-3 mt-3 row mobile-view">
+        <div class="cell">ITEMS & DESCRIPTION</div>
+        <div class="d-flex justify-content-between align-items-center cell">
+            <div class="product"
+                style="background-color: #ccc; border-radius: 5px; display: inline-block; position: relative;">
+                <img src="https://imgs.search.brave.com/fdRvRxRKb9mw_7XyMl7m04N_Cwesbw9vDT6GxT0MlXU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZGJj/ZG4uYi1jZG4ubmV0/L2ltZy9QaG90b3Mv/QXZhdGFycy9pbWcl/MjAoMSkud2VicA"
+                    alt="" class="avatar-img rounded-circle" style="position: relative; height: 60px; width: 60px;">
+                <p
+                    style="position: absolute; top: -13px; left: -10px; margin: 0; color: rgb(182, 83, 83); background-color: rgba(223, 228, 225, 0.5); padding: 5px; border-radius: 50%; border: 2px solid rgb(41, 206, 115);">
+                    9</p>
+            </div>
+            <div>
+                <h7 class="text-dark"><span class="bold-span">T-shirt in soft...</span></h7>
+            </div>
+        </div>
+        <div class="cell">INVOICED</div>
+        <div class="text-success cell"><i class="bi bi-check"></i></div>
+        <div class="cell">PACKED</div>
+        <div class="text-success cell"><i class="bi bi-clock"></i></div>
+        <div class="cell">SHIPPED</div>
+        <div class="text-success cell"><i class="bi bi-clock"></i></div>
+        <div class="cell">RATE</div>
+        <div class="text-muted cell font-weight-bold">24,00 $</div>
+        <div class="cell">AMOUNT</div>
+        <div class="text-dark cell font-weight-bold">72,00 $</div>
+    </div>
+
+
+
+    <div class="bg-white rounded-3 p-3 mt-3 row mobile-view">
+        <div class="cell">ITEMS & DESCRIPTION</div>
+        <div class="d-flex justify-content-between align-items-center cell">
+            <div class="product"
+                style="background-color: #ccc; border-radius: 5px; display: inline-block; position: relative;">
+                <img src="https://imgs.search.brave.com/fdRvRxRKb9mw_7XyMl7m04N_Cwesbw9vDT6GxT0MlXU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZGJj/ZG4uYi1jZG4ubmV0/L2ltZy9QaG90b3Mv/QXZhdGFycy9pbWcl/MjAoMSkud2VicA"
+                    alt="" class="avatar-img rounded-circle" style="position: relative; height: 60px; width: 60px;">
+                <p
+                    style="position: absolute; top: -13px; left: -10px; margin: 0; color: rgb(182, 83, 83); background-color: rgba(223, 228, 225, 0.5); padding: 5px; border-radius: 50%; border: 2px solid rgb(41, 206, 115);">
+                    9</p>
+            </div>
+            <div>
+                <h7 class="text-dark"><span class="bold-span">Jacket in denim</span></h7>
+            </div>
+        </div>
+        <div class="cell">INVOICED</div>
+        <div class="text-success cell"><i class="bi bi-check"></i></div>
+        <div class="cell">PACKED</div>
+        <div class="text-success cell"><i class="bi bi-check"></i></div>
+        <div class="cell">SHIPPED</div>
+        <div class="text-success cell"><i class="bi bi-check"></i></div>
+        <div class="cell">RATE</div>
+        <div class="text-muted cell font-weight-bold">44,56 $</div>
+        <div class="cell">AMOUNT</div>
+        <div class="text-dark cell font-weight-bold">401,04 $</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.4.0/mdb.min.js"></script>
 </body>
 
 </html>
